@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovilGarage.iOS", "MovilGar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovilGarage.UWP", "MovilGarage\MovilGarage.UWP\MovilGarage.UWP.csproj", "{7F5D9ED2-7685-41CB-B285-9EB7B55BDE8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovilGarage", "MovilGarage\MovilGarage\MovilGarage.csproj", "{2C74E4C6-FBB9-4BD8-B35E-E5854A84A90B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovilGarage", "MovilGarage\MovilGarage\MovilGarage.csproj", "{2C74E4C6-FBB9-4BD8-B35E-E5854A84A90B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

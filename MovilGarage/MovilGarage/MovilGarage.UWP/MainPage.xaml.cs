@@ -20,7 +20,7 @@ namespace MovilGarage.UWP
         public MainPage()
         {
             this.InitializeComponent();
-
+            Xamarin.FormsMaps.Init("INSERT_AUTHENTICATION_TOKEN_HERE");
             LoadApplication(new MovilGarage.App());
         }
     }
