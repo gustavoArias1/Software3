@@ -11,7 +11,7 @@ namespace MovilGarage
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new Vistas.APIGoogleMapsxaml();
         }
 
         protected override void OnStart()
