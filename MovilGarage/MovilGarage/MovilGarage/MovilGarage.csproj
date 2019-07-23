@@ -22,7 +22,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Vistas\APIGoogleMapsxaml.xaml">
+    <Compile Update="Vistas\UbicarConcesionarioMenuItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Vistas\UbicarConcesionario.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vistas\UbicarConcesionarioDetail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vistas\UbicarConcesionarioMaster.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

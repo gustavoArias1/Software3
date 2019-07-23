@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MovilGarage.Vistas;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +12,7 @@ namespace MovilGarage
         {
             InitializeComponent();
 
-            MainPage = new Vistas.APIGoogleMapsxaml();
+            MainPage = new UbicarConcesionario();
         }
 
         protected override void OnStart()

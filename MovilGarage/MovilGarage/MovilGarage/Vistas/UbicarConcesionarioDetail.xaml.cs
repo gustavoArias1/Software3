@@ -10,18 +10,11 @@ using Xamarin.Forms.Xaml;
 
 namespace MovilGarage.Vistas
 {
-    /*
-     * Manuel David Galvis Cardenas
-     * Versión 1.0v
-     * La clase es la encargada de realizar la vista del pagina donde se mostrara el mapa de google
-     * y proximamente se mostrara la ubicación de los diferentes concesionarios recuperados de la
-     * página web. 
-     */
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class APIGoogleMapsxaml : ContentPage
-	{
-		public APIGoogleMapsxaml ()
-		{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class UbicarConcesionarioDetail : ContentPage
+    {
+        public UbicarConcesionarioDetail()
+        {
             var map = new Map(
                 MapSpan.FromCenterAndRadius(
                     new Position(5.0550064, -75.50647), Distance.FromKilometers(13)))
@@ -41,6 +34,6 @@ namespace MovilGarage.Vistas
             var stack = new StackLayout { Spacing = 0 };
             stack.Children.Add(map);
             Content = stack;
-		}
-	}
+        }
+    }
 }
