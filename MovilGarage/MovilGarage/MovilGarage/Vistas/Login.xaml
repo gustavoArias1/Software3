@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovilGarage.Vistas.Login">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#7392E1">
+            <StackLayout Margin="15"
+                         VerticalOptions="CenterAndExpand"
+                         HorizontalOptions="CenterAndExpand">
+                <Label Text="MovilGarage"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       FontSize="Title" />
+            </StackLayout>
+            <StackLayout Margin="15">
+                <StackLayout>
+                    <Label Text="Usuario"
+                           TextColor="White"
+                           FontSize="Medium" 
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand"/>
+                    <Entry Placeholder="Ingrese su correo"
+                           TextChanged="onEntryTextChanged"
+                           Completed="onEntryCompleted"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Contraseña"
+                           TextColor="White"
+                           FontSize="Medium"
+                           VerticalOptions="CenterAndExpand"
+                           HorizontalOptions="CenterAndExpand"/>
+                    <Entry Placeholder="Ingrese su contraseña"
+                           MaxLength="11"
+                           IsSpellCheckEnabled="False"
+                           IsTextPredictionEnabled="False"
+                           IsPassword="True" />
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Margin="15">
+                <Button Clicked="Button_Clicked" 
+                        Text="Ingresar" 
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
