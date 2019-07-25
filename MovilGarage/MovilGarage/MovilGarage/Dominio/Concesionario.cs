@@ -13,8 +13,8 @@ namespace MovilGarage.Dominio
         public Concesionario(string nombreConcesionario, double latitud, double longitud)
         {
             this.nombreConcesionario = nombreConcesionario;
-            Latitud = latitud;
-            Longitud = longitud;
+            this.Latitud = latitud;
+            this.Longitud = longitud;
         }
 
         

@@ -11,8 +11,8 @@ namespace MovilGarage.Dominio
 
         public Cliente(string correo, string contraseña)
         {
-            Correo = correo;
-            Contraseña = contraseña;
+            this.Correo = correo;
+            this.Contraseña = contraseña;
         }
     }
 }
