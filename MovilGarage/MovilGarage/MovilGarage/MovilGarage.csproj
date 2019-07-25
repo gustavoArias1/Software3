@@ -16,8 +16,6 @@
 
   <ItemGroup>
     <Folder Include="Logica\" />
-    <Folder Include="Dominio\" />
-    <Folder Include="ServiciosDB\" />
     <Folder Include="ServiciosExternos\" />
   </ItemGroup>
 
