@@ -6,9 +6,16 @@ using System.Threading.Tasks;
 
 namespace MovilGarage.Vistas
 {
-
+    /// <summary>
+    /// @author Manuel Galvis
+    /// @version Version 3.0
+    /// Clase que almacena atributos tomados de la interfaz para ser enviados al modelo lógico y ser utilizados para sus métodos.
+    /// </summary>
     public class UbicarConcesionarioMenuItem
     {
+        /// <summary>
+        /// Constructor de la clase.
+        /// </summary>
         public UbicarConcesionarioMenuItem()
         {
             TargetType = typeof(UbicarConcesionarioDetail);

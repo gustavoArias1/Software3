@@ -6,28 +6,20 @@ using Xamarin.Forms.Xaml;
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace MovilGarage
 {
+    /// <summary>
+    /// @author Manuel Galvis
+    /// @version Version 1.0
+    /// Clase principal de la aplicación donde se inicializa la vista principal.
+    /// </summary>
     public partial class App : Application
     {
+        /// <summary>
+        /// Constructor de la clase.
+        /// </summary>
         public App()
         {
             InitializeComponent();
-
-            MainPage = new UbicarConcesionario();
-        }
-
-        protected override void OnStart()
-        {
-            // Handle when your app starts
-        }
-
-        protected override void OnSleep()
-        {
-            // Handle when your app sleeps
-        }
-
-        protected override void OnResume()
-        {
-            // Handle when your app resumes
+            MainPage = new Login();
         }
     }
 }

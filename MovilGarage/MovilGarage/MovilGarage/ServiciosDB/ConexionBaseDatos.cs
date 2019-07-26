@@ -6,11 +6,20 @@ using MovilGarage.Dominio;
 
 namespace MovilGarage.ServiciosDB
 {
+    /// <summary>
+    /// @Gustavo Arias, Manuel Galvis, Cristian Diaz
+    /// @version 3.0
+    /// DBFake utilizada por el momento en la aplicacion para la obtencion de datos y ser probados.
+    /// </summary>
     class ConexionBaseDatos
     {
         private List<Concesionario> concesionarios { set; get; }
         private List<Cliente> Clientes { set; get; }
 
+        /// <summary>
+        /// Concesionarios sacados de la base de datos para pruebas de la aplicacion.
+        /// </summary>
+        /// <returns>Lista de concesionarios</returns>
         public List<Concesionario> tablaConcesionarios()
         {
             concesionarios = new List<Concesionario>();
@@ -24,6 +33,10 @@ namespace MovilGarage.ServiciosDB
             return this.concesionarios;
         }
 
+        /// <summary>
+        /// Clinetes sacados de la base de datos para pruebas de la aplicacion.
+        /// </summary>
+        /// <returns>Lista de clientes.</returns>
         public List<Cliente> tablaClientes()
         {
             Clientes = new List<Cliente>();

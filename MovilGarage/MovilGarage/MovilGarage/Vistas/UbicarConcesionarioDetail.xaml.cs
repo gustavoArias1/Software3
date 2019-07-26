@@ -10,11 +10,19 @@ using Xamarin.Forms.Xaml;
 
 namespace MovilGarage.Vistas
 {
+    /// <summary>
+    /// @author Manuel Galvis
+    /// @version Version 3.0
+    /// Esta clase crea un mapa consumiendo la API de google, creando así un mapa solo con la ubicación del usuario o un Pin con la ubicación de un concesionario seleccionado.
+    /// </summary>
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class UbicarConcesionarioDetail : ContentPage
     {
         public Map map = new Map();
-        public UbicarConcesionarioMenuItem aux;
+        
+        /// <summary>
+        /// Contrucotor que crea un mapa con la ubicación del usuario.
+        /// </summary>
         public UbicarConcesionarioDetail()
         {
             map = new Map(
@@ -31,6 +39,13 @@ namespace MovilGarage.Vistas
             Content = stack;
         }
 
+        /// <summary>
+        /// Constructor que crea un mapa con la ubicación del usuario y la ubicación de un concesionario seleccionado en el menu.
+        /// </summary>
+        /// <param name="latitud">Latitud cartografica para la ubicacion del pin</param>
+        /// <param name="longitud">Longitud cartografica para la ubicacion del pin</param>
+        /// <param name="direccion">Dirección del concesionario donde fue ubicado el pin</param>
+        /// <param name="telefono">Telefono del concesionario donde fue ubicado el pin</param>
         public UbicarConcesionarioDetail(double latitud, double longitud, string direccion, string telefono)
         {
             map = new Map(
