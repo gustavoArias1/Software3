@@ -8,11 +8,12 @@ namespace MovilGarage.Logica
 {
     public class IngresarAlSistema
     {
-        private ConexionBaseDatos conexion = new ConexionBaseDatos();
+        private ConexionBaseDatos conexion;
         private List<Cliente> listaClientes;
 
         public IngresarAlSistema()
         {
+            conexion = new ConexionBaseDatos();
             listaClientes = conexion.tablaClientes();
         }
 

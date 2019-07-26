@@ -21,7 +21,6 @@ namespace MovilGarage.ServiciosDB
             concesionarios.Add(new Concesionario("Renault", 5.054323, -75.481586));
             concesionarios.Add(new Concesionario("CaldasMotor", 5.057124, -75.486572));
             concesionarios.Add(new Concesionario("Volkswagen", 5.060861, -75.484653));
-
             return this.concesionarios;
         }
 
@@ -33,6 +32,5 @@ namespace MovilGarage.ServiciosDB
             Clientes.Add(new Cliente("789@gmail.com", "GQH19DHD1NK"));
             return this.Clientes;
         }
-
     }
 }

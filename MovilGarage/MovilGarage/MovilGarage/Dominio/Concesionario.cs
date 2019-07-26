@@ -6,9 +6,9 @@ namespace MovilGarage.Dominio
 {
     public class Concesionario
     {
-        private string nombreConcesionario { get; set; }
-        private double latitud { get; set; }
-        private double longitud { get; set; }
+        public string nombreConcesionario { get; set; }
+        public double latitud { get; set; }
+        public double longitud { get; set; }
 
         public Concesionario(string nombreConcesionario, double latitud, double longitud)
         {
@@ -16,8 +16,6 @@ namespace MovilGarage.Dominio
             this.latitud = latitud;
             this.longitud = longitud;
         }
-
-        
     }
     
 }
