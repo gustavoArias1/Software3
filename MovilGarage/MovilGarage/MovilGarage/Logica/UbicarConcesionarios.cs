@@ -22,7 +22,7 @@ namespace MovilGarage.Logica
         public UbicarConcesionarios()
         {
             conexion = new ConexionBaseDatos();
-            listaConcesionarios = conexion.tablaConcesionarios();
+            listaConcesionarios = conexion.TablaConcesionarios();
         }
 
         /// <summary>

@@ -22,7 +22,7 @@ namespace MovilGarage.Logica
         public IngresarAlSistema()
         {
             conexion = new ConexionBaseDatos();
-            listaClientes = conexion.tablaClientes();
+            listaClientes = conexion.TablaClientes();
         }
 
         /// <summary>
@@ -31,13 +31,13 @@ namespace MovilGarage.Logica
         /// <param name="usuario">Usuario ingresado con el correo del cliente</param>
         /// <param name="contraseña">Contraseña digitada por el cliente</param>
         /// <returns>Verdadero en caso de que el usuario y la contraseña sean validas, falso si no se encuentra registrado en la plataforma o ingreso mal alguno de sus campos</returns>
-        public Boolean auntenticarseSistema(string usuario, string contraseña)
+        public Boolean AuntenticarseSistema(string usuario, string contraseña)
         {
             for (int i = 0; i < this.listaClientes.Count; i++)
             {
-                if(this.listaClientes[i].correo.Equals(usuario))
+                if(this.listaClientes[i].Correo.Equals(usuario))
                 {
-                    if(this.listaClientes[i].contraseña.Equals(contraseña))
+                    if(this.listaClientes[i].Contraseña.Equals(contraseña))
                     {
                         return true;
                     }

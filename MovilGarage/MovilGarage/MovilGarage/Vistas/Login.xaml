@@ -21,8 +21,8 @@
                            VerticalOptions="CenterAndExpand"/>
                     <Entry Placeholder="Ingrese su correo"
                            Text="{Binding usuario}"
-                           TextChanged="onEntryTextChanged"
-                           Completed="onEntryCompleted"/>
+                           TextChanged="OnEntryTextChanged"
+                           Completed="OnEntryCompleted"/>
                 </StackLayout>
                 <StackLayout>
                     <Label Text="Contraseña"
@@ -32,7 +32,7 @@
                            HorizontalOptions="CenterAndExpand"/>
                     <Entry Placeholder="Ingrese su contraseña"
                            Text="{Binding contraseña}"
-                           TextChanged="ingresoContraseña"
+                           TextChanged="IngresoContraseña"
                            MaxLength="11"
                            IsSpellCheckEnabled="False"
                            IsTextPredictionEnabled="False"
