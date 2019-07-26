@@ -4,17 +4,17 @@ using System.Text;
 
 namespace MovilGarage.Dominio
 {
-    class Concesionario
+    public class Concesionario
     {
         private string nombreConcesionario { get; set; }
-        private double Latitud { get; set; }
-        private double Longitud { get; set; }
+        private double latitud { get; set; }
+        private double longitud { get; set; }
 
         public Concesionario(string nombreConcesionario, double latitud, double longitud)
         {
             this.nombreConcesionario = nombreConcesionario;
-            this.Latitud = latitud;
-            this.Longitud = longitud;
+            this.latitud = latitud;
+            this.longitud = longitud;
         }
 
         

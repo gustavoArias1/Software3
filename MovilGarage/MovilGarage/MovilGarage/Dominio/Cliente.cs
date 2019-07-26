@@ -4,15 +4,15 @@ using System.Text;
 
 namespace MovilGarage.Dominio
 {
-    class Cliente
+    public class Cliente
     {
-        private  string Correo { get; set; }
-        private string Contraseña { get; set; }
+        public string correo { get; set; }
+        public string contraseña { get; set; }
 
         public Cliente(string correo, string contraseña)
         {
-            this.Correo = correo;
-            this.Contraseña = contraseña;
+            this.correo = correo;
+            this.contraseña = contraseña;
         }
     }
 }

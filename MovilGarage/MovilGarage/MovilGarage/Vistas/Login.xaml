@@ -20,6 +20,7 @@
                            HorizontalOptions="CenterAndExpand"
                            VerticalOptions="CenterAndExpand"/>
                     <Entry Placeholder="Ingrese su correo"
+                           Text="{Binding usuario}"
                            TextChanged="onEntryTextChanged"
                            Completed="onEntryCompleted"/>
                 </StackLayout>
@@ -30,6 +31,8 @@
                            VerticalOptions="CenterAndExpand"
                            HorizontalOptions="CenterAndExpand"/>
                     <Entry Placeholder="Ingrese su contraseña"
+                           Text="{Binding contraseña}"
+                           TextChanged="ingresoContraseña"
                            MaxLength="11"
                            IsSpellCheckEnabled="False"
                            IsTextPredictionEnabled="False"

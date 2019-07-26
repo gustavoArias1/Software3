@@ -15,7 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Logica\" />
     <Folder Include="ServiciosExternos\" />
   </ItemGroup>
 

@@ -20,7 +20,7 @@ namespace MovilGarage.Vistas
         public UbicarConcesionarioMaster()
         {
             InitializeComponent();
-
+            
             BindingContext = new UbicarConcesionarioMasterViewModel();
             ListView = MenuItemsListView;
         }
