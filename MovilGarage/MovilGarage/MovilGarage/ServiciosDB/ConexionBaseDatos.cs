@@ -6,7 +6,7 @@ using MovilGarage.Dominio;
 
 namespace MovilGarage.ServiciosDB
 {
-    class ConexionBaseDatos
+    public class ConexionBaseDatos
     {
         private List<Concesionario> concesionarios { set; get; }
         private List<Cliente> Clientes { set; get; }
