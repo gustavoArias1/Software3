@@ -35,7 +35,7 @@ namespace MovilGarage.Vistas
         /// </summary>
         /// <param name="sender">Objeto que envia la respuesta del metodo.</param>
         /// <param name="e">Evento que se recibe cuando se cambia el texto en el campo de texto de la vista.</param>
-        void onEntryTextChanged(object sender, TextChangedEventArgs e)
+        void OnEntryTextChanged(object sender, TextChangedEventArgs e)
         {
             string oldText = e.OldTextValue;
             string newText = e.NewTextValue;
@@ -47,7 +47,7 @@ namespace MovilGarage.Vistas
         /// </summary>
         /// <param name="sender">>Objeto que envia la respuesta del metodo.</param>
         /// <param name="e">Evento que se recibe cuando se cambia el texto en el campo de texto de la vista.</param>
-        void ingresoContraseña(object sender, TextChangedEventArgs e)
+        void IngresoContraseña(object sender, TextChangedEventArgs e)
         {
             contraseña = e.NewTextValue;
         }
@@ -57,7 +57,7 @@ namespace MovilGarage.Vistas
         /// </summary>
         /// <param name="sender">Objeto que envia la respuesta del metodo.</param>
         /// <param name="e">Evento del metodo</param>
-        void onEntryCompleted(object sender, EventArgs e)
+        void OnEntryCompleted(object sender, EventArgs e)
         {
             string text = ((Entry)sender).Text;
         }
@@ -70,7 +70,7 @@ namespace MovilGarage.Vistas
         async void Button_Clicked(object sender, EventArgs e)
         {
             this.autenticarse = new IngresarAlSistema();
-            if (autenticarse.auntenticarseSistema(usuario, contraseña))
+            if (autenticarse.AuntenticarseSistema(usuario, contraseña))
             {
                 await Navigation.PushModalAsync(new UbicarConcesionario());
             }

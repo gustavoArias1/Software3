@@ -54,9 +54,9 @@ namespace MovilGarage.Vistas
                 UbicarConcesionarioMenuItem[] menu = new UbicarConcesionarioMenuItem[listaConcesionarios.Count];
                 for (int i = 0; i < listaConcesionarios.Count; i++)
                 {
-                    menu[i] = new UbicarConcesionarioMenuItem { Id = i + 1, Title = listaConcesionarios[i].nombreConcesionario,
-                        Latitud = listaConcesionarios[i].latitud, Longitud = listaConcesionarios[i].longitud,
-                        Direccion = listaConcesionarios[i].direccion, Telefono = listaConcesionarios[i].telefono};
+                    menu[i] = new UbicarConcesionarioMenuItem { Id = i + 1, Title = listaConcesionarios[i].NombreConcesionario,
+                        Latitud = listaConcesionarios[i].Latitud, Longitud = listaConcesionarios[i].Longitud,
+                        Direccion = listaConcesionarios[i].Direccion, Telefono = listaConcesionarios[i].Telefono};
                 }
                 MenuItems = new ObservableCollection<UbicarConcesionarioMenuItem>(menu);
             }

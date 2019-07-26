@@ -10,8 +10,8 @@ namespace MovilGarage.Dominio
     /// </summary>
     public class Cliente
     {
-        public string correo { get; set; }
-        public string contraseña { get; set; }
+        public string Correo { get; set; }
+        public string Contraseña { get; set; }
 
         /// <summary>
         /// Constructor de la clase
@@ -20,8 +20,8 @@ namespace MovilGarage.Dominio
         /// <param name="contraseña">Contraseña del cliente registrado</param>
         public Cliente(string correo, string contraseña)
         {
-            this.correo = correo;
-            this.contraseña = contraseña;
+            this.Correo = correo;
+            this.Contraseña = contraseña;
         }
     }
 }

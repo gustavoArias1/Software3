@@ -20,7 +20,7 @@ namespace Tests
             string Contraseña = "UZF02FOO5RZ";
             bool entro = true;
 
-            Assert.AreEqual(entro, I.auntenticarseSistema(Usuario, Contraseña));
+            Assert.AreEqual(entro, I.AuntenticarseSistema(Usuario, Contraseña));
 
 
 
@@ -33,7 +33,7 @@ namespace Tests
             string Usuario = "123@gmail.com";
             string Contraseña = "prueba";
             bool entro = false;
-            Assert.AreEqual(entro, I.auntenticarseSistema(Usuario, Contraseña));
+            Assert.AreEqual(entro, I.AuntenticarseSistema(Usuario, Contraseña));
 
 
         }

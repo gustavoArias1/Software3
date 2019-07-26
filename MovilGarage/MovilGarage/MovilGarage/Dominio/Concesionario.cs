@@ -10,11 +10,11 @@ namespace MovilGarage.Dominio
     /// </summary>
     public class Concesionario
     {
-        public string nombreConcesionario { get; set; }
-        public string direccion { get; set; }
-        public string telefono  { get; set; }
-        public double latitud { get; set; }
-        public double longitud { get; set; }
+        public string NombreConcesionario { get; set; }
+        public string Direccion { get; set; }
+        public string Telefono  { get; set; }
+        public double Latitud { get; set; }
+        public double Longitud { get; set; }
 
         /// <summary>
         /// Contructor de la clase Concesionario
@@ -26,11 +26,11 @@ namespace MovilGarage.Dominio
         /// <param name="longitud">La longitud cartografíca del concesionario para su ubicación en la API de google</param>
         public Concesionario(string nombreConcesionario, string direccion,string telefono, double latitud, double longitud)
         {
-            this.nombreConcesionario = nombreConcesionario;
-            this.direccion = direccion;
-            this.telefono = telefono;
-            this.latitud = latitud;
-            this.longitud = longitud;
+            this.NombreConcesionario = nombreConcesionario;
+            this.Direccion = direccion;
+            this.Telefono = telefono;
+            this.Latitud = latitud;
+            this.Longitud = longitud;
         }
     }
     
