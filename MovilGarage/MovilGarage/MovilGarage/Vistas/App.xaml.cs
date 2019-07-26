@@ -12,7 +12,7 @@ namespace MovilGarage
         {
             InitializeComponent();
 
-            MainPage = new Login();
+            MainPage = new UbicarConcesionario();
         }
 
         protected override void OnStart()
