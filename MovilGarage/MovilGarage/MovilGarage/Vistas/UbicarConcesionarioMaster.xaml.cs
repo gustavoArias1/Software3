@@ -40,7 +40,8 @@ namespace MovilGarage.Vistas
                 for (int i = 0; i < listaConcesionarios.Count; i++)
                 {
                     menu[i] = new UbicarConcesionarioMenuItem { Id = i + 1, Title = listaConcesionarios[i].nombreConcesionario,
-                        Latitud = listaConcesionarios[i].latitud, Longitud = listaConcesionarios[i].longitud };
+                        Latitud = listaConcesionarios[i].latitud, Longitud = listaConcesionarios[i].longitud,
+                        Direccion = listaConcesionarios[i].direccion, Telefono = listaConcesionarios[i].telefono};
                 }
                 MenuItems = new ObservableCollection<UbicarConcesionarioMenuItem>(menu);
             }

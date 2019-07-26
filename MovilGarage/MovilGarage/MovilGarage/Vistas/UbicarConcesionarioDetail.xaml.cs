@@ -31,7 +31,7 @@ namespace MovilGarage.Vistas
             Content = stack;
         }
 
-        public UbicarConcesionarioDetail(double latitud, double longitud)
+        public UbicarConcesionarioDetail(double latitud, double longitud, string direccion, string telefono)
         {
             map = new Map(
                 MapSpan.FromCenterAndRadius(
@@ -48,7 +48,8 @@ namespace MovilGarage.Vistas
             {
                 Type = PinType.Place,
                 Position = position,
-                Label = "Mi pin"
+                Label = telefono,
+                Address = direccion
             };
             map.Pins.Add(pin);
             var stack = new StackLayout { Spacing = 0 };

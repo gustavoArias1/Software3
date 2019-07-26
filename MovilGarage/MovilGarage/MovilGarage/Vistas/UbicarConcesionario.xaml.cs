@@ -28,7 +28,7 @@ namespace MovilGarage.Vistas
             var page = (Page)Activator.CreateInstance(item.TargetType);
             page.Title = item.Title;
 
-            Detail = new NavigationPage(new UbicarConcesionarioDetail(item.Latitud, item.Longitud));
+            Detail = new NavigationPage(new UbicarConcesionarioDetail(item.Latitud, item.Longitud, item.Direccion, item.Telefono));
             IsPresented = false;
 
             MasterPage.ListView.SelectedItem = null;
