@@ -42,7 +42,6 @@ namespace MovilGarage.Vistas
         async void Button_Clicked(object sender, EventArgs e)
         {
             this.autenticarse = new IngresarAlSistema();
-            Console.WriteLine(usuario + " : " + contraseña);
             if (autenticarse.auntenticarseSistema(usuario, contraseña))
             {
                 await Navigation.PushModalAsync(new UbicarConcesionario());
