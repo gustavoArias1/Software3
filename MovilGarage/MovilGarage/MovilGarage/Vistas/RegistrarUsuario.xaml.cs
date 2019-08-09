@@ -1,10 +1,9 @@
-﻿using MovilGarage.Logica;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Input;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -13,19 +12,19 @@ namespace MovilGarage.Vistas
     /// <summary>
     /// @author Manuel Galvis
     /// @version Versión 1.0
-    /// ViewModel de la interfaz del login donde se manejara el ingreso en la aplicacion.
+    /// ViewModel de la interfaz del login donde se manejara el registro de un nuevo usuario en la aplicación en la aplicacion.
     /// </summary>
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Login : ContentPage
+    public partial class RegistrarUsuario : ContentPage
     {
-        private IngresarAlSistema autenticarse;
         private string usuario;
         private string contraseña;
+        private string segundaContraseña;
 
         /// <summary>
         /// Inicialización de los componentes.
         /// </summary>
-        public Login()
+        public RegistrarUsuario()
         {
             InitializeComponent();
         }
@@ -40,16 +39,6 @@ namespace MovilGarage.Vistas
             string oldText = e.OldTextValue;
             string newText = e.NewTextValue;
             usuario = e.NewTextValue;
-        }
-
-        /// <summary>
-        /// Método que asigna la contraseña un atributo global para ser utilizado en la autenticación.
-        /// </summary>
-        /// <param name="sender">>Objeto que envia la respuesta del metodo.</param>
-        /// <param name="e">Evento que se recibe cuando se cambia el texto en el campo de texto de la vista.</param>
-        void IngresoContraseña(object sender, TextChangedEventArgs e)
-        {
-            contraseña = e.NewTextValue;
         }
 
         /// <summary>
@@ -69,7 +58,7 @@ namespace MovilGarage.Vistas
         /// <param name="e">Evento que se recibe cuando se cambia el texto en el campo de texto de la vista.</param>
         async void Button_Clicked(object sender, EventArgs e)
         {
-            this.autenticarse = new IngresarAlSistema();
+            /*this.autenticarse = new IngresarAlSistema();
             if (autenticarse.AuntenticarseSistema(usuario, contraseña))
             {
                 await Navigation.PushModalAsync(new UbicarConcesionario());
@@ -77,12 +66,7 @@ namespace MovilGarage.Vistas
             else
             {
                 await DisplayAlert("Usuario incorrecto", "El usuario ingresado es incorrecto", "OK");
-            }
-        }
-
-        async void Button_Clicked_2(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new RegistrarUsuario());
+            }*/
         }
     }
 }

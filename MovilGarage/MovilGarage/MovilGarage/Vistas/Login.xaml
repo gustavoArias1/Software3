@@ -3,48 +3,67 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MovilGarage.Vistas.Login">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#7392E1">
-            <StackLayout Margin="15"
-                         VerticalOptions="CenterAndExpand"
-                         HorizontalOptions="CenterAndExpand">
-                <Label Text="MovilGarage"
-                       TextColor="White"
-                       FontAttributes="Bold"
-                       FontSize="Title" />
-            </StackLayout>
-            <StackLayout Margin="15">
-                <StackLayout>
-                    <Label Text="Usuario"
+        <ScrollView>
+            <StackLayout BackgroundColor="#7392E1">
+                <StackLayout Margin="15"
+                             VerticalOptions="CenterAndExpand"
+                             HorizontalOptions="CenterAndExpand">
+                    <Label Text="MovilGarage"
                            TextColor="White"
-                           FontSize="Medium" 
-                           HorizontalOptions="CenterAndExpand"
-                           VerticalOptions="CenterAndExpand"/>
-                    <Entry Placeholder="Ingrese su correo"
-                           Text="{Binding usuario}"
-                           TextChanged="OnEntryTextChanged"
-                           Completed="OnEntryCompleted"/>
+                           FontAttributes="Bold"
+                           FontSize="Title" />
                 </StackLayout>
-                <StackLayout>
-                    <Label Text="Contraseña"
-                           TextColor="White"
-                           FontSize="Medium"
-                           VerticalOptions="CenterAndExpand"
-                           HorizontalOptions="CenterAndExpand"/>
-                    <Entry Placeholder="Ingrese su contraseña"
-                           Text="{Binding contraseña}"
-                           TextChanged="IngresoContraseña"
-                           MaxLength="11"
-                           IsSpellCheckEnabled="False"
-                           IsTextPredictionEnabled="False"
-                           IsPassword="True" />
+                <StackLayout Margin="15">
+                    <StackLayout>
+                        <Label Text="Usuario"
+                               TextColor="White"
+                               FontSize="Medium" 
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="CenterAndExpand"/>
+                        <Entry Placeholder="Ingrese su correo"
+                               Text="{Binding usuario}"
+                               TextChanged="OnEntryTextChanged"
+                               Completed="OnEntryCompleted"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Label Text="Contraseña"
+                               TextColor="White"
+                               FontSize="Medium"
+                               VerticalOptions="CenterAndExpand"
+                               HorizontalOptions="CenterAndExpand"/>
+                        <Entry Placeholder="Ingrese su contraseña"
+                               Text="{Binding contraseña}"
+                               TextChanged="IngresoContraseña"
+                               MaxLength="11"
+                               IsSpellCheckEnabled="False"
+                               IsTextPredictionEnabled="False"
+                               IsPassword="True" />
+                    </StackLayout>
                 </StackLayout>
+                <Grid Margin="15">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Clicked="Button_Clicked" 
+                            Text="Ingresar"
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="CenterAndExpand">
+                    </Button>
+                    <Button Clicked="Button_Clicked_2" 
+                            Text="Registrar Usuario" 
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="CenterAndExpand">
+                    </Button>
+                </Grid>
             </StackLayout>
-            <StackLayout Margin="15">
-                <Button Clicked="Button_Clicked" 
-                        Text="Ingresar" 
-                        VerticalOptions="CenterAndExpand"
-                        HorizontalOptions="CenterAndExpand"/>
-            </StackLayout>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

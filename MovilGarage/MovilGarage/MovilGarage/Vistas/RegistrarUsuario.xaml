@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovilGarage.Vistas.RegistrarUsuario">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#7392E1">
+                <StackLayout Margin="15"
+                             VerticalOptions="CenterAndExpand"
+                             HorizontalOptions="CenterAndExpand">
+                    <Label FontSize="Title"
+                           FontAttributes="Bold"
+                           TextColor="White"
+                           Text="Nuevo usuario"/>
+                </StackLayout>
+                <StackLayout Margin="15">
+                    <Label Text="Usuario"
+                           TextColor="White"
+                           FontSize="Medium" 
+                           HorizontalOptions="StartAndExpand"
+                           VerticalOptions="StartAndExpand"/>
+                    <Entry Placeholder="Ingrese su correo"
+                               Text="{Binding usuario}"
+                               TextChanged="OnEntryTextChanged"
+                               Completed="OnEntryCompleted"/>
+                </StackLayout>
+                <StackLayout Margin="15">
+                    <Label Text="Contraseña"
+                           TextColor="White"
+                           FontSize="Medium"
+                           HorizontalOptions="StartAndExpand"
+                           VerticalOptions="StartAndExpand"/>
+                    <Entry Placeholder="Ingrese su contraseña"
+                           Text="{Binding contraseña}"
+                           MaxLength="11"
+                           IsSpellCheckEnabled="False"
+                           IsTextPredictionEnabled="False"
+                           IsPassword="True" />
+                </StackLayout>
+                <StackLayout Margin="15">
+                    <Label Text="Repetir contraseña"
+                           TextColor="White"
+                           FontSize="Medium"
+                           HorizontalOptions="StartAndExpand"
+                           VerticalOptions="StartAndExpand"/>
+                    <Entry Placeholder="Confirme su contraseña"
+                           Text="{Binding segundaContraseña}"
+                           MaxLength="11"
+                           IsSpellCheckEnabled="False"
+                           IsTextPredictionEnabled="False"
+                           IsPassword="True" />
+                </StackLayout>
+                <StackLayout Margin="15">
+                    <Button Clicked="Button_Clicked" 
+                            Text="Registrar usuario" 
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
