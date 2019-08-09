@@ -45,7 +45,7 @@ namespace MovilGarage.ServiciosDB
             return Clientes;
         }
 
-        public List<Vehiculo> tablaVehiculos()
+        public List<Vehiculo> TablaVehiculos()
         {
             Vehiculos.Add(new Vehiculo("abc123", "Commodo LLC", "cx5", "24-02-20", "12500", "Blanco", "Audi", "200000"));
             Vehiculos.Add(new Vehiculo("BEG 287", "Commodo LLC", "cx5", "07-10-19", "40376", "green", "Nissan", "4367285"));
