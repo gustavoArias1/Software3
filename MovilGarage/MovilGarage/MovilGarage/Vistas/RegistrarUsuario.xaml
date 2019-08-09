@@ -32,6 +32,7 @@
                            VerticalOptions="StartAndExpand"/>
                     <Entry Placeholder="Ingrese su contraseña"
                            Text="{Binding contraseña}"
+                           TextChanged="Entry_TextChanged"
                            MaxLength="11"
                            IsSpellCheckEnabled="False"
                            IsTextPredictionEnabled="False"
@@ -45,6 +46,7 @@
                            VerticalOptions="StartAndExpand"/>
                     <Entry Placeholder="Confirme su contraseña"
                            Text="{Binding segundaContraseña}"
+                           TextChanged="Entry_TextChanged_1"
                            MaxLength="11"
                            IsSpellCheckEnabled="False"
                            IsTextPredictionEnabled="False"

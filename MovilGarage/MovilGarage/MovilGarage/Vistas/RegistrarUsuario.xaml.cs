@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MovilGarage.Logica;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,7 @@ namespace MovilGarage.Vistas
         private string usuario;
         private string contraseña;
         private string segundaContraseña;
+        private RegistrarNuevoUsuario registrarUsuario;
 
         /// <summary>
         /// Inicialización de los componentes.
@@ -58,15 +60,39 @@ namespace MovilGarage.Vistas
         /// <param name="e">Evento que se recibe cuando se cambia el texto en el campo de texto de la vista.</param>
         async void Button_Clicked(object sender, EventArgs e)
         {
-            /*this.autenticarse = new IngresarAlSistema();
-            if (autenticarse.AuntenticarseSistema(usuario, contraseña))
+            if (usuario == null || contraseña == null || segundaContraseña == null)
             {
-                await Navigation.PushModalAsync(new UbicarConcesionario());
+                await DisplayAlert("Campos vacíos", "Todos los campos deben estar llenos", "OK");
             }
             else
             {
-                await DisplayAlert("Usuario incorrecto", "El usuario ingresado es incorrecto", "OK");
-            }*/
+                this.registrarUsuario = new RegistrarNuevoUsuario();
+                if (!registrarUsuario.ValidaciónDeUsuario(usuario))
+                {
+                    await DisplayAlert("Formato invalido", "El formato del correo es invalido", "OK");
+                }
+                else
+                {
+                    if (registrarUsuario.RegistraUsuario(usuario, contraseña, segundaContraseña))
+                    {
+                        await DisplayAlert("Usuario registrado", "El usuario ha sido registrado en la plataforma", "OK");
+                    }
+                    else
+                    {
+                        await DisplayAlert("Usuario no registrado", "El usuario no ha podido ser registrado en la plataforma", "OK");
+                    }
+                }
+            }
+        }
+
+        private void Entry_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            contraseña = e.NewTextValue;
+        }
+
+        private void Entry_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+            segundaContraseña = e.NewTextValue;
         }
     }
 }

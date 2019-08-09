@@ -13,7 +13,9 @@ namespace MovilGarage.ServiciosDB
     /// </summary>
     public class ConexionBaseDatos
     {
-       
+        public List<Concesionario> Concesionarios = new List<Concesionario>();
+        public List<Cliente> Clientes = new List<Cliente>();
+        public List<Vehiculo> Vehiculos = new List<Vehiculo>();
 
         /// <summary>
         /// Concesionarios sacados de la base de datos para pruebas de la aplicacion.
@@ -21,7 +23,6 @@ namespace MovilGarage.ServiciosDB
         /// <returns>Lista de concesionarios</returns>
         public List<Concesionario> TablaConcesionarios()
         {
-            List<Concesionario> Concesionarios = new List<Concesionario>();
             Concesionarios.Add(new Concesionario("CasaRestrepo", "calle 84 # 26 71","8 84 30 80", 5.042467, -75.4781977));
             Concesionarios.Add(new Concesionario("AudiLosCoches", "carrera 23a # 74 128","8 87 01 11", 5.046661, -75.483607));
             Concesionarios.Add(new Concesionario("Rasautos", "carrera 23a # 74 01","8 87 24 11", 5.047100, -75.483495));
@@ -38,8 +39,6 @@ namespace MovilGarage.ServiciosDB
         /// <returns>Lista de clientes.</returns>
         public List<Cliente> TablaClientes()
         {
-            List<Cliente> Clientes;
-            Clientes = new List<Cliente>();
             Clientes.Add(new Cliente("123@gmail.com", "UZF02FOO5RZ"));
             Clientes.Add(new Cliente("456@gmail.com", "FNN99WLK5RL"));
             Clientes.Add(new Cliente("789@gmail.com", "GQH19DHD1NK"));
@@ -48,8 +47,6 @@ namespace MovilGarage.ServiciosDB
 
         public List<Vehiculo> tablaVehiculos()
         {
-            List<Vehiculo> Vehiculos;
-            Vehiculos = new List<Vehiculo>();
             Vehiculos.Add(new Vehiculo("abc123", "Commodo LLC", "cx5", "24-02-20", "12500", "Blanco", "Audi", "200000"));
             Vehiculos.Add(new Vehiculo("BEG 287", "Commodo LLC", "cx5", "07-10-19", "40376", "green", "Nissan", "4367285"));
             Vehiculos.Add(new Vehiculo("BIL 434", "Commodo LLC", "cx5", "24-02-20", "07600", "violet", "Nissan", "166952141"));
