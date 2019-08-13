@@ -44,14 +44,17 @@ namespace MovilGarage.ServiciosDB
             Clientes.Add(new Cliente("789@gmail.com", "GQH19DHD1NK"));
             return Clientes;
         }
-
+        /// <summary>
+        /// Vehiculos sacados de la base de datos
+        /// </summary>
+        /// <returns>Lista de vehiculos.</returns>
         public List<Vehiculo> TablaVehiculos()
         {
-            Vehiculos.Add(new Vehiculo("abc123", "Commodo LLC", "cx5", "24-02-20", "12500", "Blanco", "Audi", "200000"));
-            Vehiculos.Add(new Vehiculo("BEG 287", "Commodo LLC", "cx5", "07-10-19", "40376", "green", "Nissan", "4367285"));
-            Vehiculos.Add(new Vehiculo("BIL 434", "Commodo LLC", "cx5", "24-02-20", "07600", "violet", "Nissan", "166952141"));
-            Vehiculos.Add(new Vehiculo("BSV 173", "Commodo LLC", "cx5", "07-08-18", "99213", "orange", "ford", "32623205"));
-            Vehiculos.Add(new Vehiculo("CMJ 848", "a2", "cx5", "15-07-18", "36198", "yellow", "Audi", "93500821"));
+            Vehiculos.Add(new Vehiculo("abc123", "Commodo LLC", "cx5", "2018", "12500", "Blanco", "Audi", "200000", DateTime.Today));
+            Vehiculos.Add(new Vehiculo("BEG 287", "Commodo LLC", "cx5", "2019", "40376", "green", "Nissan", "4367285",new DateTime(2019,2,24)));
+            Vehiculos.Add(new Vehiculo("BIL 434", "Commodo LLC", "cx5", "2017", "07600", "violet", "Nissan", "166952141", DateTime.Today));
+            Vehiculos.Add(new Vehiculo("BSV 173", "Commodo LLC", "cx5", "2018", "99213", "orange", "ford", "32623205", DateTime.Today));
+            Vehiculos.Add(new Vehiculo("CMJ 848", "a2", "cx5", "2018", "36198", "yellow", "Audi", "93500821",new DateTime(2019,3,15)));
             return Vehiculos;
         }
 
