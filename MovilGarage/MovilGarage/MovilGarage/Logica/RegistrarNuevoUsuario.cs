@@ -53,7 +53,13 @@ namespace MovilGarage.Logica
             }
         }
 
-
+        /// <summary>
+        /// Ingresa un usuario en la plataforma
+        /// </summary>
+        /// <param name="usuario">Correo del usuario</param>
+        /// <param name="contraseña">Contraseña</param>
+        /// <param name="segundaContraseña">Confirmacion de la contraseña</param>
+        /// <returns>Verdadero si el usuario ha sido registrado, falso si ya existe o no coinciden ambas contraseñas</returns>
         public Boolean RegistraUsuario(string usuario, string contraseña, string segundaContraseña)
         {
             for (int i = 0; i < this.listaClientes.Count; i++)

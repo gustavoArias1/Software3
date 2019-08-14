@@ -23,8 +23,6 @@ namespace MovilGarage.Logica
         }
 
         /// <summary>
-        /// @author William Vásquez
-        /// @version Version 1.0
         /// Permite obtener los vehículos agregados en el último mes, mes actual
         /// </summary>
         public List<Vehiculo> ConsultarUltimosVehiculos() {
