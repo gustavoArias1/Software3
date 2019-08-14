@@ -56,12 +56,14 @@ namespace MovilGarage.Logica
 
         public Boolean RegistraUsuario(string usuario, string contraseña, string segundaContraseña)
         {
-            login = new IngresarAlSistema();
-            if(login.AuntenticarseSistema(usuario, contraseña))
+            for (int i = 0; i < this.listaClientes.Count; i++)
             {
-                return false;
+                if (this.listaClientes[i].Correo.Equals(usuario))
+                {
+                    return false;
+                }
             }
-            else if(contraseña.Equals(segundaContraseña))
+            if (contraseña.Equals(segundaContraseña))
             {
                 conexion.Clientes.Add(new Cliente(usuario, contraseña));
                 return true;
