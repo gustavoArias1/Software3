@@ -27,6 +27,11 @@ namespace MovilGarage.Logica
             listaClientes = conexion.TablaClientes();
         }
 
+        /// <summary>
+        /// Valida que el usuario ingresado corresponda a los estandares solicitados
+        /// </summary>
+        /// <param name="usuario">Correo electronico del usuario</param>
+        /// <returns>Verdadero en caso de cumplir con los estandares de un correo, falso en caso contrario</returns>
         public Boolean ValidaciónDeUsuario(string usuario)
         {
             String expresion;
@@ -47,6 +52,7 @@ namespace MovilGarage.Logica
                 return false;
             }
         }
+
 
         public Boolean RegistraUsuario(string usuario, string contraseña, string segundaContraseña)
         {
