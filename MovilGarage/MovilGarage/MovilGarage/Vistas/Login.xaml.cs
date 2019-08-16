@@ -72,11 +72,11 @@ namespace MovilGarage.Vistas
             this.autenticarse = new IngresarAlSistema();
             if (autenticarse.AuntenticarseSistema(usuario, contraseña))
             {
-                await Navigation.PushModalAsync(new UbicarConcesionario());
+                await Navigation.PushModalAsync(new Menu());
             }
             else
             {
-                await DisplayAlert("Usuario incorrecto", "El usuario ingresado es incorrecto", "OK");
+                await DisplayAlert("Usuario incorrecto", "El usuario o la contraseña es incorrecto", "OK");
             }
         }
 

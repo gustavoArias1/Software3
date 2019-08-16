@@ -19,7 +19,7 @@ namespace MovilGarage
         public App()
         {
             InitializeComponent();
-            MainPage = new UltimosVehiculosAgregadosView();
+            MainPage = new Login();
         }
     }
 }
