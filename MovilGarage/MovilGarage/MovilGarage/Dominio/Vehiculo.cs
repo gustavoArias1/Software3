@@ -15,8 +15,9 @@ namespace MovilGarage.Dominio
         public string Concesionario { get; set; }
         public string Precio { get; set; }
         public DateTime FechaAdquisicion { get; set; }
+        public string Url { get; set; }
 
-        public Vehiculo(string placa, string marca, string modelo, string año, string numeroChasis, string color, string concesionario, string precio,DateTime fechaAdquisicion)
+        public Vehiculo(string placa, string marca, string modelo, string año, string numeroChasis, string color, string concesionario, string precio,DateTime fechaAdquisicion, string url)
         {
             this.Placa = placa;
             this.Marca = marca;
@@ -27,6 +28,7 @@ namespace MovilGarage.Dominio
             this.Concesionario = concesionario;
             this.Precio = precio;
             this.FechaAdquisicion = fechaAdquisicion;
+            this.Url = url;
         }
 
     }
