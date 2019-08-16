@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,20 @@ namespace MovilGarage.Vistas
         public UltimosVehiculosAgregadosViewDetail()
         {
             InitializeComponent();
+        }
+
+        public UltimosVehiculosAgregadosViewDetail(string Marca, string Modelo, string Año, string NumeroChasis, string Color, string Concesionario, string Precio)
+        {
+            InitializeComponent();
+            BindingContext = this;
+
+            MarcaLogic.Text = Marca;
+            ModeloLogic.Text = Modelo;
+            AñoLogic.Text = Año;
+            ChasisLogic.Text = NumeroChasis;
+            ColorLogic.Text = Color;
+            ConcesionarioLogic.Text = Concesionario;
+            PrecioLogic.Text = Precio;
         }
     }
 }

@@ -16,6 +16,9 @@ namespace MovilGarage.Logica
         private ConexionBaseDatos conexion;
         private List<Vehiculo> listaVehículos;
 
+        /// <summary>
+        /// Contructor de la clase
+        /// </summary>
         public UltimosVehículos()
         {
             this.conexion = new ConexionBaseDatos();

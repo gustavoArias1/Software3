@@ -3,7 +3,160 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MovilGarage.Vistas.UltimosVehiculosAgregadosViewDetail"
              Title="Detail">
-  <StackLayout Padding="10">
-    <Label Text="This is a detail page. To get the 'triple' line icon on each platform add a icon to each platform and update the 'Master' page with an Icon that references it."/>
-  </StackLayout>
+    <StackLayout Padding="10" BackgroundColor="#7392E1">
+        <ScrollView>
+            <StackLayout>
+                <StackLayout Margin="15"
+                             VerticalOptions="CenterAndExpand"
+                             HorizontalOptions="CenterAndExpand">
+                    <Label FontSize="Title"
+                           FontAttributes="Bold"
+                           TextColor="White"
+                           Text="Información del vehículo"/>
+                </StackLayout>
+                <StackLayout>
+                    <Image>
+                        
+                    </Image>
+                </StackLayout>
+                <ScrollView>
+                    <Grid Margin="30">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Marca:"
+                                TextColor="White"
+                                FontSize="Medium"
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                HorizontalOptions="StartAndExpand"
+                                VerticalOptions="StartAndExpand"
+                               Margin="5"/>
+                        <Label Text= "{Binding MarcaLogic}"
+                               x:Name="MarcaLogic"
+                                TextColor="White"
+                                FontSize="Medium"
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                HorizontalOptions="StartAndExpand"
+                                VerticalOptions="StartAndExpand"
+                               Margin="5"/>
+                        <Label Text="Modelo:"
+                                TextColor="White"
+                                FontSize="Medium"
+                                Grid.Row="1"
+                                Grid.Column="0"
+                                HorizontalOptions="StartAndExpand"
+                                VerticalOptions="StartAndExpand"
+                               Margin="5"/>
+                        <Label Text= "{Binding ModeloLogic}"
+                               x:Name="ModeloLogic"
+                                TextColor="White"
+                                FontSize="Medium"
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                HorizontalOptions="StartAndExpand"
+                                VerticalOptions="StartAndExpand"
+                               Margin="5"/>
+                        <Label Text="Año:"
+                                TextColor="White"
+                                FontSize="Medium"
+                                Grid.Row="2"
+                                Grid.Column="0"
+                                HorizontalOptions="StartAndExpand"
+                                VerticalOptions="StartAndExpand"
+                               Margin="5"/>
+                        <Label Text= "{Binding AñoLogic}"
+                               x:Name="AñoLogic"
+                                TextColor="White"
+                                FontSize="Medium"
+                                Grid.Row="2"
+                                Grid.Column="1"
+                                HorizontalOptions="StartAndExpand"
+                                VerticalOptions="StartAndExpand"
+                               Margin="5"/>
+                        <Label Text="Chasis:"
+                                TextColor="White"
+                                FontSize="Medium"
+                                Grid.Row="3"
+                                Grid.Column="0"
+                                HorizontalOptions="StartAndExpand"
+                                VerticalOptions="StartAndExpand"
+                               Margin="5"/>
+                        <Label Text= "{Binding ChasisLogic}"
+                               x:Name="ChasisLogic"
+                                TextColor="White"
+                                FontSize="Medium"
+                                Grid.Row="3"
+                                Grid.Column="1"
+                                HorizontalOptions="StartAndExpand"
+                                VerticalOptions="StartAndExpand"
+                               Margin="5"/>
+                        <Label Text="Color:"
+                                TextColor="White"
+                                FontSize="Medium"
+                                Grid.Row="4"
+                                Grid.Column="0"
+                                HorizontalOptions="StartAndExpand"
+                                VerticalOptions="StartAndExpand"
+                               Margin="5"/>
+                        <Label Text= "{Binding ColorLogic}"
+                               x:Name="ColorLogic"
+                                TextColor="White"
+                                FontSize="Medium"
+                                Grid.Row="4"
+                                Grid.Column="1"
+                                HorizontalOptions="StartAndExpand"
+                                VerticalOptions="StartAndExpand"
+                               Margin="5"/>
+                        <Label Text="Concesionario:"
+                                TextColor="White"
+                                FontSize="Medium"
+                                Grid.Row="5"
+                                Grid.Column="0"
+                                HorizontalOptions="StartAndExpand"
+                                VerticalOptions="StartAndExpand"
+                               Margin="5"/>
+                        <Label Text= "{Binding ConcesionarioLogic}"
+                               x:Name="ConcesionarioLogic"
+                                TextColor="White"
+                                FontSize="Medium"
+                                Grid.Row="5"
+                                Grid.Column="1"
+                                HorizontalOptions="StartAndExpand"
+                                VerticalOptions="StartAndExpand"
+                               Margin="5"/>
+                        <Label Text="Precio:"
+                                TextColor="White"
+                                FontSize="Medium"
+                                Grid.Row="6"
+                                Grid.Column="0"
+                                HorizontalOptions="StartAndExpand"
+                                VerticalOptions="StartAndExpand"
+                               Margin="5"/>
+                        <Label Text= "{Binding PrecioLogic}"
+                               x:Name="PrecioLogic"
+                                TextColor="White"
+                                FontSize="Medium"
+                                Grid.Row="6"
+                                Grid.Column="1"
+                                HorizontalOptions="StartAndExpand"
+                                VerticalOptions="StartAndExpand"
+                               Margin="5"/>
+                    </Grid>
+                </ScrollView>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
 </ContentPage>

@@ -50,11 +50,11 @@ namespace MovilGarage.ServiciosDB
         /// <returns>Lista de vehiculos.</returns>
         public List<Vehiculo> TablaVehiculos()
         {
-            Vehiculos.Add(new Vehiculo("abc123", "Commodo LLC", "cx5", "2018", "12500", "Blanco", "Audi", "200000", DateTime.Today,"../Resources/Audi.jpg"));
-            Vehiculos.Add(new Vehiculo("BEG 287", "Commodo LLC", "cx5", "2019", "40376", "green", "Nissan", "4367285",new DateTime(2019,2,24), "../Resources/Audi2.jpg"));
-            Vehiculos.Add(new Vehiculo("BIL 434", "Commodo LLC", "cx5", "2017", "07600", "violet", "Nissan", "166952141", DateTime.Today, "../Resources/Ford.jpg"));
-            Vehiculos.Add(new Vehiculo("BSV 173", "Commodo LLC", "cx5", "2018", "99213", "orange", "ford", "32623205", DateTime.Today, "../Resources/Nissan.jpg"));
-            Vehiculos.Add(new Vehiculo("CMJ 848", "a2", "cx5", "2018", "36198", "yellow", "Audi", "93500821",new DateTime(2019,3,15), "../Resources/Audi.jpg"));
+            Vehiculos.Add(new Vehiculo("abc123", "Audi", "cx5", "2018", "12500", "Blanco", "CasaRestrepo", "20000000", DateTime.Today));
+            Vehiculos.Add(new Vehiculo("BEG 287", "Audi", "cx9", "2019", "40376", "green", "LosRosales", "40367285",new DateTime(2019,2,24)));
+            Vehiculos.Add(new Vehiculo("BIL 434", "Ford", "48xgu", "2017", "07600", "violet", "LosRosales", "166952141", DateTime.Today));
+            Vehiculos.Add(new Vehiculo("BSV 173", "Nissan", "fest4", "2018", "99213", "orange", "CasaRestrepo", "32623205", DateTime.Today));
+            Vehiculos.Add(new Vehiculo("CMJ 848", "Nissan", "Extpro", "2018", "36198", "yellow", "CasaRestrepo", "93500821",new DateTime(2019,3,15)));
             return Vehiculos;
         }
 
