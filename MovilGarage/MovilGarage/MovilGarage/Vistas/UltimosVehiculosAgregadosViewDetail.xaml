@@ -14,10 +14,10 @@
                            TextColor="White"
                            Text="Información del vehículo"/>
                 </StackLayout>
-                <StackLayout>
-                    <Image>
-                        
-                    </Image>
+                <StackLayout Margin="30">
+                    <Image Source="{Binding Imagen}"
+                           x:Name="Imagen"
+                           HeightRequest="300"/>
                 </StackLayout>
                 <ScrollView>
                     <Grid Margin="30">

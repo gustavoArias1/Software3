@@ -40,7 +40,7 @@ namespace MovilGarage.Vistas
             var page = (Page)Activator.CreateInstance(item.TargetType);
             page.Title = item.Title;
 
-            Detail = new NavigationPage(new UltimosVehiculosAgregadosViewDetail(item.Marca, item.Modelo, item.Año, item.NumeroChasis, item.Color, item.Concesionario, item.Precio));
+            Detail = new NavigationPage(new UltimosVehiculosAgregadosViewDetail(item.Marca, item.Modelo, item.Año, item.NumeroChasis, item.Color, item.Concesionario, item.Precio, item.Url));
             IsPresented = false;
 
             MasterPage.ListView.SelectedItem = null;

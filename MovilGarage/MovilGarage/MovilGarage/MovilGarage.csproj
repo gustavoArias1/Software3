@@ -10,6 +10,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Audi.jpg" />
+    <None Remove="Resources\Audi2.jpg" />
+    <None Remove="Resources\Ford.jpg" />
+    <None Remove="Resources\Nissan.jpg" />
+    <None Remove="Resources\Nissan2.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Audi.jpg" />
+    <EmbeddedResource Include="Resources\Audi2.jpg" />
+    <EmbeddedResource Include="Resources\Ford.jpg" />
+    <EmbeddedResource Include="Resources\Nissan.jpg" />
+    <EmbeddedResource Include="Resources\Nissan2.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.1.0.581479" />
     <PackageReference Include="Xamarin.Forms.Maps" Version="4.1.0.581479" />
   </ItemGroup>

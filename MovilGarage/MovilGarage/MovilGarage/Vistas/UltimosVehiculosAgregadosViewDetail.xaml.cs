@@ -18,11 +18,11 @@ namespace MovilGarage.Vistas
             InitializeComponent();
         }
 
-        public UltimosVehiculosAgregadosViewDetail(string Marca, string Modelo, string Año, string NumeroChasis, string Color, string Concesionario, string Precio)
+        public UltimosVehiculosAgregadosViewDetail(string Marca, string Modelo, string Año, string NumeroChasis, string Color, string Concesionario, string Precio, string Url)
         {
             InitializeComponent();
             BindingContext = this;
-
+            Imagen = new Image{ Source = ImageSource.FromResource(Url)};
             MarcaLogic.Text = Marca;
             ModeloLogic.Text = Modelo;
             AñoLogic.Text = Año;

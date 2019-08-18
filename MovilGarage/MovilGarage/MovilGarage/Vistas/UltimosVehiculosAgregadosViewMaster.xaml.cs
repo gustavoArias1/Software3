@@ -60,7 +60,8 @@ namespace MovilGarage.Vistas
                         Color = listaVehiculos[i].Color,
                         NumeroChasis = listaVehiculos[i].NumeroChasis,
                         Concesionario = listaVehiculos[i].Concesionario,
-                        Precio = listaVehiculos[i].Precio
+                        Precio = listaVehiculos[i].Precio,
+                        Url = listaVehiculos[i].Url
                     };
                 }
                 MenuItems = new ObservableCollection<UltimosVehiculosAgregadosViewMenuItem>(menu);

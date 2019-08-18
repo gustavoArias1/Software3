@@ -31,6 +31,7 @@ namespace MovilGarage.Vistas
         public string Color { get; set; }
         public string Concesionario { get; set; }
         public string Precio { get; set; }
+        public string Url { get; set; }
 
         public Type TargetType { get; set; }
     }

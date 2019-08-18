@@ -76,6 +76,7 @@ namespace MovilGarage.Vistas
                     if (registrarUsuario.RegistraUsuario(usuario, contraseña, segundaContraseña))
                     {
                         await DisplayAlert("Usuario registrado", "El usuario ha sido registrado en la plataforma", "OK");
+                        await Navigation.PushModalAsync(new Login());
                     }
                     else
                     {

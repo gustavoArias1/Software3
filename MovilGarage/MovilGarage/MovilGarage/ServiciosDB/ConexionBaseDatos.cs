@@ -50,11 +50,11 @@ namespace MovilGarage.ServiciosDB
         /// <returns>Lista de vehiculos.</returns>
         public List<Vehiculo> TablaVehiculos()
         {
-            Vehiculos.Add(new Vehiculo("abc123", "Audi", "cx5", "2018", "12500", "Blanco", "CasaRestrepo", "20000000", DateTime.Today));
-            Vehiculos.Add(new Vehiculo("BEG 287", "Audi", "cx9", "2019", "40376", "green", "LosRosales", "40367285",new DateTime(2019,2,24)));
-            Vehiculos.Add(new Vehiculo("BIL 434", "Ford", "48xgu", "2017", "07600", "violet", "LosRosales", "166952141", DateTime.Today));
-            Vehiculos.Add(new Vehiculo("BSV 173", "Nissan", "fest4", "2018", "99213", "orange", "CasaRestrepo", "32623205", DateTime.Today));
-            Vehiculos.Add(new Vehiculo("CMJ 848", "Nissan", "Extpro", "2018", "36198", "yellow", "CasaRestrepo", "93500821",new DateTime(2019,3,15)));
+            Vehiculos.Add(new Vehiculo("abc123", "Audi", "cx5", "2018", "12500", "Blanco", "CasaRestrepo", "20000000", DateTime.Today, "https://www.diariomotor.com/imagenes/2018/11/audi-r8-2019-ficha-1118-005.jpg"));
+            Vehiculos.Add(new Vehiculo("BEG 287", "Audi", "cx9", "2019", "40376", "green", "LosRosales", "40367285",new DateTime(2019,2,24), "https://www.audi.com.co/media/ThreeColTeaser_TextImage_Image_Component/5716-paragraphs-23515-281562-image/dh-900-bc764f/f5690918/1555402192/audi-q3-s-line-black-home.jpg"));
+            Vehiculos.Add(new Vehiculo("BIL 434", "Ford", "48xgu", "2017", "07600", "violet", "LosRosales", "166952141", DateTime.Today, "https://www.diariomotor.com/imagenes/2019/04/ford-explorer-2019-0319-010.jpg"));
+            Vehiculos.Add(new Vehiculo("BSV 173", "Nissan", "fest4", "2018", "99213", "orange", "CasaRestrepo", "32623205", DateTime.Today, "https://acroadtrip.blob.core.windows.net/catalogo-imagenes/l/RT_V_933bacfa64664b75b60089841a11a2e4.jpg"));
+            Vehiculos.Add(new Vehiculo("CMJ 848", "Nissan", "Extpro", "2018", "36198", "yellow", "CasaRestrepo", "93500821",new DateTime(2019,3,15), "https://acs2.blob.core.windows.net/imgcatalogo/l/VA_a2aa7fafebc2485bb20237f6bf90bad4.jpg"));
             return Vehiculos;
         }
 
